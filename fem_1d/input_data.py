@@ -16,7 +16,7 @@ def input_data(a, b, Nelem):
     # Right nodes
     elem[1,0:Nelem] = range(2, Nelem+2)
 
-    # Define Dirichlet Boundary conditions
+    # Define Dirichlet Boundary conditions (Nodes that are applied and Values)
     NDir = 2
     DirNod = np.zeros((NDir, 1), dtype=int)
     DirVal = np.zeros((NDir, 1))
